@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EDE5" >
+    
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:background="#e6e6e6" >
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_launcher" />
+        
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/edtTxtStyle"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_select"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="姓名" >
+            <requestFocus />
+        </EditText>
+        
+        <EditText
+	        android:id="@+id/et_phone"
+	        style="@style/edtTxtStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/et_name"
+            android:layout_marginTop="20dp"
+	        android:ems="10"
+	        android:hint="电话"
+	        android:inputType="phone" />
+        
+	    <EditText
+	        android:id="@+id/et_email"
+	        style="@style/edtTxtStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/et_phone"
+            android:layout_marginTop="20dp"
+	        android:ems="10"
+	        android:hint="邮箱"
+	        android:inputType="textEmailAddress" />
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#000000" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:onClick="complete"
+            android:text="完成"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
